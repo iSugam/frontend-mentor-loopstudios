@@ -54,6 +54,66 @@ header .navbar ul li a {
     color: var(--white);
 }
 
+.nav-sd-icon {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+/******* Media Query for HEADER 980px  *******/
+@media (max-width: 980px) {
+
+    header .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: transform 300ms;
+        background-color: var(--black);
+        width: 100%;
+        height: 100vh;
+        z-index: 9;
+    }
+
+    header .navbar.active  {
+        transform: translateX(0);
+    }
+
+    .nav-sd-icon {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 50px;
+        padding: 0 2rem;
+    }
+
+    .nav-sd-icon a {
+        color: var(--white);
+        font-size: 24px;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+
+    header .navbar ul {
+        margin-top: 100px;
+    }
+    header .navbar ul li {
+        display: block;
+        margin-top: 20px;
+        padding: 0 1rem;
+    }
+
+    header .navbar ul li a {
+        text-transform: uppercase;
+        font-size: 18px;
+        color: var(--dark-gray);
+    }
+}
+
 /**************** HERO Styling ****************/
 .hero {
     padding: 2.5rem 10rem;
