@@ -65,6 +65,10 @@ header .navbar ul li a {
 /******* Media Query for HEADER 980px  *******/
 @media (max-width: 980px) {
 
+    header {
+        padding: 2rem;
+    }
+
     header .navbar {
         position: fixed;
         top: 0;
@@ -85,6 +89,7 @@ header .navbar ul li a {
         display: flex;
         width: 100%;
         justify-content: space-between;
+        align-items: center;
         margin-top: 50px;
         padding: 0 2rem;
     }
@@ -92,6 +97,10 @@ header .navbar ul li a {
     .nav-sd-icon a {
         color: var(--white);
         font-size: 24px;
+    }
+
+    .nav-sd-icon .close-icon {
+        margin-top: 10px;
     }
     
     .hamburger {
@@ -119,7 +128,6 @@ header .navbar ul li a {
     padding: 2.5rem 10rem;
     object-fit: contain;
     color: var(--white);
-
 }
 
 .hero .hero-backgroung-img {
@@ -146,6 +154,7 @@ header .navbar ul li a {
     height: 90vh;
 }
 
+/* Heading TEXT */
 .hero .heading-text {
     width: 650px;
     padding: 2rem;
@@ -163,6 +172,29 @@ header .navbar ul li a {
     line-height: 64px;
 }
 
+
+/******* Media Query for HERO 980px  *******/
+@media (max-width: 980px) {
+
+    .hero {
+        padding: 2rem;
+    }
+
+    .hero .heading-text {
+        width: 100%;
+        padding: 2rem;
+        margin: auto;
+        border: 3px solid var(--white);
+        margin-top: 8%;
+    }
+
+    .hero .heading-text h1 {
+        font-size: 2.3rem;
+        line-height: 34px;
+        margin: auto;
+    }
+
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
