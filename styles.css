@@ -360,6 +360,7 @@ header .navbar ul li a:hover::after {
     margin-top: 150px;
 }
 
+/****** Our Creation HEADING ******/
 .our-creation .creation-heading {
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -370,11 +371,12 @@ header .navbar ul li a:hover::after {
 }
 
 .our-creation .creation-heading h2 {
-    font-size: 42px;
+    font-size: 3rem;
     font-weight: 300;
     font-family: var(--font-josefin-sans);
 }
 
+/****** Our Creation ANCHOR TAGS ******/
 .our-creation a {
     color: var(--black);
     text-transform: uppercase;
@@ -415,10 +417,12 @@ header .navbar ul li a:hover::after {
     transform: scaleX(1);
 }
 
+/****** Our Creation CONTENT for _MOBILE_ ******/
 .creation-content-mobile {
     display: none;
 }
 
+/****** Our Creation CONTENT for _DESKTOP_ ******/
 .creation-content-desktop {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
@@ -428,6 +432,7 @@ header .navbar ul li a:hover::after {
     justify-self: center;
 }
 
+/****** Our Creation FIGURE Styling ******/
 .creation-content-desktop figure {
     position: relative;
     width: max-content;
@@ -460,7 +465,7 @@ header .navbar ul li a:hover::after {
     height: fit-content;
 }
 
-.figure-img::before {
+.creation-content-desktop .figure-img::before {
     content: '';
     position: absolute;
     left: 0;
@@ -469,7 +474,7 @@ header .navbar ul li a:hover::after {
     background-image: linear-gradient(to top, rgb(0 0 0 / 0.6), transparent);
 }
 
-.figure-img img {
+.creation-content-desktop .figure-img img {
     width: 260px;
     height: 450px;
     object-fit: cover;
@@ -492,6 +497,80 @@ header .navbar ul li a:hover::after {
     color: var(--black);
 }
 
+/******* Media Query for OUR CREATION 980px *******/
+@media (max-width: 980px) {
+
+    .our-creation .creation-heading {
+        width: 100%;
+    }
+    .our-creation .creation-heading h2 {
+        font-size: 2rem;
+        margin: auto;
+    }
+
+    .see-all-btn {
+        display: none;
+    }
+
+    .creation-content-desktop {
+        display: none;
+    }
+
+    .creation-content-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 30px;
+        margin-top: 40px;
+        text-transform: uppercase;
+        margin: auto;
+    }
+
+    .creation-content-mobile figure {
+        position: relative;
+        width: 100%;
+        margin: auto;
+    }
+
+    .creation-content-mobile .figure-img {
+        width: 100%;
+        margin: auto;
+    }
+
+    .creation-content-mobile .figure-img::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        min-width: 300px;
+        max-width: 500px;
+        height: 200px;
+        background-image: linear-gradient(to right, rgb(0 0 0 / 0.8), transparent);
+    }
+    
+    .creation-content-mobile .figure-img img {
+        min-width: 300px;
+        max-width: 500px;
+        height: 200px;
+        object-fit: cover;
+        margin: auto;
+    }
+
+    .creation-content-mobile figure figcaption {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        text-transform: uppercase;
+        color: var(--white);
+        font-size: 34px;
+        font-family: var(--font-josefin-sans);
+        font-weight: 400;
+        z-index: 2;
+        transition: color 200ms;
+    }
+
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
