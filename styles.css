@@ -369,7 +369,7 @@ header .navbar ul li a:hover::after {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 12px;
+    padding: 0 14px;
 }
 
 .our-creation .creation-heading h2 {
