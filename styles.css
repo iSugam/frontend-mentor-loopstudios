@@ -225,6 +225,7 @@ header .navbar ul li a:hover::after {
     .hero .hero-backgroung-img {
         background-image: url("images/mobile/image-hero.jpg");
         height: 100vh;
+        background-attachment: fixed;
     }
 
     .hero .background-color {
@@ -234,7 +235,7 @@ header .navbar ul li a:hover::after {
     .hero .heading-text {
         width: 100%;
         padding: 1.5rem;
-        margin-top: 50%;
+        margin-top: 75%;
         transform: translate(0, -50%);
     }
 
@@ -461,7 +462,7 @@ header .navbar ul li a:hover::after {
     background-color: #fff6;
 }
 
-.figure-img {
+.creation-content-desktop .figure-img {
     position: relative;
     width: 260px;
     height: fit-content;
@@ -518,6 +519,13 @@ header .navbar ul li a:hover::after {
 
     .see-all-btn {
         display: none;
+    }
+
+    .our-creation .see-all-btn-2 {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
     }
 
     .creation-content-desktop {
@@ -608,6 +616,7 @@ header .navbar ul li a:hover::after {
 .footer {
     width: 100%;
     background-color: var(--black);
+    margin-top: 80px;
 }
 
 .footer .footer-contents {
@@ -671,6 +680,7 @@ footer .footer-right .copy-right {
     font-size: 15px;
 }
 
+/******* Media Query for FOOTER 880px *******/
 @media (max-width: 880px) {
     .footer .footer-contents {
         flex-direction: column;
@@ -694,6 +704,7 @@ footer .footer-right .copy-right {
     }
 }
 
+/******* Media Query for FOOTER 556px *******/
 @media (max-width: 556px) {
 
     footer .footer-left .footer-nav ul li {
