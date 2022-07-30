@@ -252,10 +252,10 @@ header .navbar ul li a:hover::after {
     align-items: flex-end;
     width: 100%;
     height: 100%;
-    padding: 0 10rem;
+    padding: 1rem 10rem;
     margin: auto;
-    margin-top:0;
-    overflow-y: hidden;
+    margin-top: 0;
+    overflow: hidden;
 }
 
 .about .about-image {
@@ -357,6 +357,7 @@ header .navbar ul li a:hover::after {
 .our-creation {
     width: 100%;
     padding: 5rem 10rem;
+    margin-top: 150px;
 }
 
 .our-creation .creation-heading {
@@ -388,6 +389,10 @@ header .navbar ul li a:hover::after {
     font-weight: 300;
 }
 
+.our-creation .see-all-btn-2 {
+    display: none;
+}
+
 .our-creation a:hover {
     color: var(--white);
 }
@@ -401,15 +406,92 @@ header .navbar ul li a:hover::after {
     height: 110%;
     background-color: var(--black);
     z-index: -1;
-    transform-origin: right;
+    transform-origin: left;
     transform: scaleX(0);
     transition:transform 300ms;
 }
 
-.our-creation a:hover::before {
-    transform-origin: left;
+.our-creation a:hover::before { 
     transform: scaleX(1);
 }
+
+.creation-content-mobile {
+    display: none;
+}
+
+.creation-content-desktop {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    align-self: center;
+    justify-self: center;
+}
+
+.creation-content-desktop figure {
+    position: relative;
+    width: max-content;
+    margin: auto;
+    margin-top: 30px;
+    cursor: pointer;
+    object-fit: fill;
+    transition: opacity 200ms;
+}
+
+.creation-content-desktop figure::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 1;
+    transition: background-color 200ms;
+}
+
+.creation-content-desktop figure:hover::before {
+    background-color: #fff6;
+}
+
+.figure-img {
+    position: relative;
+    width: 260px;
+    height: fit-content;
+}
+
+.figure-img::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 260px;
+    height: 450px;
+    background-image: linear-gradient(to top, rgb(0 0 0 / 0.6), transparent);
+}
+
+.figure-img img {
+    width: 260px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.creation-content-desktop figure figcaption {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 34px;
+    font-family: var(--font-josefin-sans);
+    font-weight: 400;
+    z-index: 2;
+    transition: color 200ms;
+}
+
+.creation-content-desktop figure:hover > figcaption {
+    color: var(--black);
+}
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
