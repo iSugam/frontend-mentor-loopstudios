@@ -1,4 +1,5 @@
-# Frontend Mentor - Loopstudios landing page solution
+# Challenge No - 5
+## Frontend Mentor - Loopstudios landing page solution
 
 This is a solution to the [Loopstudios landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -21,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/iSugam/Loopstudios-landing-page-solution-Frontend-Mentor)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/iSugam/loopstudios-landing-page-frontend-mentor)
+- Live Site URL: [Live Site](https://isugam.github.io/loopstudios-landing-page-frontend-mentor/)
 
 ## My process
 
